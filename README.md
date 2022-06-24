@@ -42,16 +42,17 @@ This application has been tested with the following stack pre-installed:
 # Usage
 
 - From the application base folder, run the Uvicorn server:
+  
   `python3 -m uvicorn main:app --reload --host="0.0.0.0" --port=8000`
-- In a browser visit `http://<server_ip_address>/docs` where `<server_ip_address` is the IP address of the server where this application is installed.
+
+- In a browser visit `http://<server_ip_address>/docs` where `<server_ip_address>` is the IP address of the server where this application is installed.
+
 - Confirm you see documentation describing the avaiable API endpoints.
 
 
 # Test script
 
-Optionally, you may run a test script called located in the root folder of the application by executing this on the command line:
-
-`python3 tests.py`
+Optionally, you may run a test script called located in the root folder of the application by executing this on the command line: `python3 tests.py`
 
 This script runs a sequence of GET, POST, PUT and DELETE calls against the `/posts` endpoint and compares the returned values to ensure they are working as expected.
 
