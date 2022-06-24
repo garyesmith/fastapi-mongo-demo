@@ -1,9 +1,9 @@
 
 # FastAPI with Mongo database demo
 
-I had trouble finding a fully-functional demonstration that uses FastAPI to create a RESTful API that handles basic CRUD operations against a Mongo database.
+A simple but fully-functional demonstration of using FastAPI to handle CRUD operations against a Mongo database.
 
-One key challenge is that Mongo's default primary key fields are named `_id` but FastAPI/Pydantic does not permit field names in a model to begin with underscores. There was  much discussion of this problem in online forums, and several partially-described solutions, and the official Mongo documentation was recently updated to [describe a solution](https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/) in full. 
+One key challenge is that Mongo's default primary key fields are named `_id` but FastAPI/Pydantic does not permit field names in a model to begin with underscores. There was  much discussion of this problem in online forums, and several partially-described solutions; thankfully the official Mongo documentation was recently updated to [describe a proper solution](https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/) in full. 
 
 This demonstration puts it all together to create a base repository that can be used to quickly spin up APIs in the future.
 
@@ -12,7 +12,7 @@ This demonstration puts it all together to create a base repository that can be 
 - Validate fields using standard Pydantic model definitions.
 - Connect to a Mongo database defined in `.env`.
 - Authenticate all endpoints against a single secret Bearer Token defined in `.env`.
-- Internally mapp the Mongo `_id` field to `id` in code and API calls.
+- Internally map the Mongo `_id` field to `id` in code and API calls.
 - Cleanly separate code for each endpoint's router and model to enable easy future expansion.
 - Automatically generate complete endpoint documentation via SwaggerUI.
 
