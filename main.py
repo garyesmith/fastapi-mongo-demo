@@ -9,7 +9,6 @@ from pydantic import ValidationError
 
 from config import settings
 from routers import post
-#from utils.auth import verify_access_token
 from utils.db import Database
 
 security = HTTPBearer()
@@ -21,7 +20,6 @@ async def http_authorize(
     """
     Authorizes an HTTP request to a REST endpoint
     """
-    #if not await verify_access_token(credentials.credentials, Database.db):
     if credentials.credentials != settings.api_key:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN)
 
