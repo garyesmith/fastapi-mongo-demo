@@ -59,7 +59,7 @@ This application has been tested with the following stack pre-installed:
     body: str
     ```
 
-- To create an additional API endpoint, copy and modify `/models/pydantic/post.py` and `/routers/post.py' and use these as a base to define a model and routes specific to your new endpoint.
+- To create an additional API endpoint, copy and modify `/models/pydantic/post.py` and `/routers/post.py` and use these as a base to define a model and routes specific to your new endpoint.
 
 
 # Automated tests
