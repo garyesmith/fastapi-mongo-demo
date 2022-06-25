@@ -66,7 +66,7 @@ This application has been tested with the following stack pre-installed:
 
 Optionally, you may run a test script called located in the root folder of the application by executing this on the command line: `python3 tests.py`
 
-This script runs a sequence of GET, POST, PUT and DELETE calls against the `/posts` endpoint and compares the returned values to ensure they are working as expected.
+This script runs a sequence of GET, POST, PUT and DELETE calls against the `/posts` endpoint and ensures the expected values are returned for each.
 
 
 
