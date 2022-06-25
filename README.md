@@ -49,8 +49,20 @@ This application has been tested with the following stack pre-installed:
 
 - Confirm you see documentation describing the avaiable API endpoints.
 
+- This demo provides CRUD endpoints for an endpoint called `/posts` for theoretical posts in a blog, which has the following model definition:
 
-# Test script
+	```
+    id: ObjectID
+    uri: str
+    title: str
+    excerpt: str
+    body: str
+    ```
+
+- To create an additional API endpoint, copy and modify `/models/pydantic/post.py` and `/routers/post.py' and use these as a base to define a model and routes specific to your new endpoint.
+
+
+# Automated tests
 
 Optionally, you may run a test script called located in the root folder of the application by executing this on the command line: `python3 tests.py`
 
