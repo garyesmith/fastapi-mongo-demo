@@ -1,7 +1,7 @@
 
 # FastAPI with Mongo database demo
 
-A baseline implementation using FastAPI to handle CRUD operations against a Mongo database.
+A baseline implementation using Python/FastAPI to handle CRUD operations against a Mongo database.
 
 One key challenge is that Mongo's default primary key fields are named `_id` but FastAPI/Pydantic does not permit field names in a model to begin with underscores. There was  much discussion of this problem in online forums, and several partially-described solutions; thankfully the official Mongo documentation was recently updated to [describe a proper solution](https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/) in full. 
 
