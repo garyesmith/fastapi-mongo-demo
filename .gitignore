@@ -3,4 +3,4 @@
 *.sublime-workspace
 **/__pycache__
 .vs/
-env/
+.myenv
